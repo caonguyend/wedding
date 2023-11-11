@@ -47,7 +47,23 @@
 
 			/* Create the parallax scrolling effect */
 			background-attachment: fixed;
-			background-position: top;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.parallax1-mobile{
+			/* The image used */
+			background-image: url(images/background/12.jpg);
+			/*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/background/2.jpg);*/
+
+			/* Set a specific height */
+			display: none;
+			min-height: 600px;
+
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
@@ -63,7 +79,22 @@
 			background-position: top;
 			background-repeat: no-repeat;
 			background-size: cover;
-			//mobile contain
+		//mobile contain
+		}
+		.parallax2-mobile{
+			display: none;
+			/* The image used */
+			background-image: url(images/background/13.jpg);
+
+			/* Set a specific height */
+			min-height: 600px;
+
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: cover;
+		//mobile contain
 		}
 		.parallax3{
 			/* The image used */
@@ -74,9 +105,49 @@
 
 			/* Create the parallax scrolling effect */
 			background-attachment: fixed;
-			background-position: top;
+			background-position: center;
 			background-repeat: no-repeat;
 			background-size: contain;
+		}
+
+		.parallax3-mobile{
+			display: none;
+			/* The image used */
+			background-image: url(images/background/14.jpg);
+
+			/* Set a specific height */
+			min-height: 600px;
+
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.album-mobile, .album-mobile .row{
+			display: none;
+			padding: 15px 0;
+		}
+
+
+		@media screen and (max-width: 768px){
+			.album-mobile, .album-mobile .row{
+				display: block;
+			}
+			.parallax{
+				min-height: 200px;
+			}
+			.parallax1-mobile, .parallax2-mobile, .parallax3-mobile{
+				display: block;
+			}
+			/*.parallax1{*/
+			/*	min-height: 200px;*/
+			/*}*/
+			.parallax2, .parallax1, .parallax3{
+				display: none;
+				background-size: contain;
+			}
 		}
 	</style>
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
@@ -267,10 +338,12 @@
 <!--		</div>-->
 <!--	</header>-->
 
-	<div class = "parallax1">
+	<div class = "parallax1 parallax">
 
 	</div>
+	<div class = "parallax1-mobile parallax">
 
+	</div>
 
 	<div id="fh5co-gallery-anh" >
 		<div class="container">
@@ -372,7 +445,11 @@
 <!--			</div>-->
 <!--		</div>-->
 <!--	</header>-->
-	<div class="parallax2">
+	<div class="parallax2 parallax">
+
+	</div>
+
+	<div class="parallax2-mobile parallax ">
 
 	</div>
 
@@ -421,43 +498,181 @@
 		</div>
 	</div>
 
-	<div class="parallax3">
+	<div class="parallax3 parallax">
 
 	</div>
 
-	<div id="fh5co-gallery" >
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-xs-6">
-					<div class="gallery animate-box" style="margin-bottom: 20px">
-						<a class="gallery-img image-popup image-popup" href="images/gallery/29.jpg"><img src="images/gallery/29.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-					</div>
-					<div class="gallery animate-box" style="margin-bottom: 20px">
-						<a class="gallery-img image-popup" href="images/gallery/2.jpg"><img src="images/gallery/2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-					</div>
+	<div class="parallax3-mobile parallax">
+
+	</div>
+
+	<div class = "album-mobile">
+		//28 29
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/28.jpg"><img src="images/album/28.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/29.jpg"><img src="images/album/29.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+		</div>
+
+		//23 24 27
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/23 3.jpg"><img src="images/album/23 3.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+			<div class="col-xs-6">
+				<div class="gallery animate-box vertical-layout" style="margin-bottom: 20px">
+					<a class="gallery-img image-popup" href="images/album/24.jpg"><img src="images/album/24.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
 				</div>
-				<div class="col-md-4 col-xs-6">
-					<div class="gallery animate-box" style="margin-bottom: 20px">
-						<a class="gallery-img image-popup" href="images/gallery/3.jpg"><img src="images/gallery/3.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-					</div>
-					<div class="gallery animate-box" style="margin-bottom: 20px">
-						<a class="gallery-img image-popup" href="images/gallery/10.jpg"><img src="images/gallery/10.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-					</div>
-					<div class="gallery animate-box" style="margin-bottom: 20px">
-						<a class="gallery-img image-popup" href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-					</div>
-				</div>
-				<div class="col-md-4 col-xs-6">
-					<div class="gallery animate-box" style="margin-bottom: 20px">
-						<a class="gallery-img image-popup" href="images/gallery/12.jpg"><img src="images/gallery/12.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-					</div>
-					<div class="gallery animate-box" style="margin-bottom: 20px">
-						<a class="gallery-img image-popup" href="images/gallery/19.jpg"><img src="images/gallery/19.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-					</div>
+				<div class="gallery animate-box vertical-layout" style="">
+					<a class="gallery-img image-popup" href="images/album/27.jpg"><img src="images/album/27.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
 				</div>
 			</div>
 		</div>
+
+		//31 25 26
+
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/31.jpg"><img src="images/album/31.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+			<div class="col-xs-6">
+				<div class="gallery animate-box vertical-layout" style="margin-bottom: 20px">
+					<a class="gallery-img image-popup" href="images/album/25.JPEG"><img src="images/album/25.JPEG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+				</div>
+				<div class="gallery animate-box vertical-layout" style="">
+					<a class="gallery-img image-popup" href="images/album/26.JPEG"><img src="images/album/26.JPEG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+				</div>
+			</div>
+		</div>
+
+		//16 21
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/16.JPG"><img src="images/album/16.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/21.JPG"><img src="images/album/21.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+		</div>
+
+		//18 19
+
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/18.JPG"><img src="images/album/18.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/19.JPG"><img src="images/album/19.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+		</div>
+
+22 20
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/22.JPG"><img src="images/album/22.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/20.JPG"><img src="images/album/20.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+		</div>
+15 633
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/15.JPG"><img src="images/album/15.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/633.JPG"><img src="images/album/633.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+		</div>
+5 4
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/5.JPG"><img src="images/album/5.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/4.JPG"><img src="images/album/4.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+		</div>
+14 34
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/14.JPG"><img src="images/album/14.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/34.JPG"><img src="images/album/34.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/2.JPEG"><img src="images/album/2.JPEG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+			<div class="col-xs-6">
+				<div class="gallery animate-box vertical-layout" style="margin-bottom: 20px">
+					<a class="gallery-img image-popup" href="images/album/32.JPEG"><img src="images/album/32.JPEG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+				</div>
+				<div class="gallery animate-box vertical-layout" style="">
+					<a class="gallery-img image-popup" href="images/album/1.JPEG"><img src="images/album/1.JPEG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+				</div>
+			</div>
+		</div>
+
+		10 11
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/10.JPG"><img src="images/album/10.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/11.JPG"><img src="images/album/11.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+		</div>
+ 13 12
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/13.JPG"><img src="images/album/13.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+			<div class="col-xs-6">
+				<a class="gallery-img image-popup image-popup" href="images/album/12.JPG"><img src="images/album/12.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+			</div>
+		</div>
 	</div>
+
+<!--	<div id="fh5co-gallery" >-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col-md-4 col-xs-6">-->
+<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
+<!--						<a class="gallery-img image-popup image-popup" href="images/gallery/29.jpg"><img src="images/gallery/29.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
+<!--					</div>-->
+<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
+<!--						<a class="gallery-img image-popup" href="images/gallery/2.jpg"><img src="images/gallery/2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="col-md-4 col-xs-6">-->
+<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
+<!--						<a class="gallery-img image-popup" href="images/gallery/3.jpg"><img src="images/gallery/3.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
+<!--					</div>-->
+<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
+<!--						<a class="gallery-img image-popup" href="images/gallery/10.jpg"><img src="images/gallery/10.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
+<!--					</div>-->
+<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
+<!--						<a class="gallery-img image-popup" href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="col-md-4 col-xs-6">-->
+<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
+<!--						<a class="gallery-img image-popup" href="images/gallery/12.jpg"><img src="images/gallery/12.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
+<!--					</div>-->
+<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
+<!--						<a class="gallery-img image-popup" href="images/gallery/19.jpg"><img src="images/gallery/19.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
 
 	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/background/img_bg_5.jpg);">
 		<div class="overlay"></div>
