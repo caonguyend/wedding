@@ -69,14 +69,14 @@
 		}
 		.parallax2{
 			/* The image used */
-			background-image: url(images/background/11.jpg);
+			background-image: url(images/background/11-mobile.jpg);
 
 			/* Set a specific height */
 			min-height: 600px;
 
 			/* Create the parallax scrolling effect */
 			background-attachment: fixed;
-			background-position: top;
+			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 		//mobile contain
@@ -142,6 +142,18 @@
 			z-index: 99;
 		}
 
+		.parallax-bg .overlay{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.parallax-bg h2{
+			color: #ffffff!important;
+			margin-bottom: 0 !important;
+			font-size: 25px !important;
+		}
+
 		@media screen and (max-width: 768px){
 
 			.fh5co-cover{
@@ -197,7 +209,7 @@
 		
 	<div class="fh5co-loader"></div>
 
-	<audio controls autoplay allow="autoplay" id="theme" style="display: none">
+	<audio controls autoplay  id="theme" style="display: none">
 		<source src="/wedding/audio/theme.mp3" type="audio/ogg">
 		<source src="/wedding/audio/theme.mp3" type="audio/mpeg" id="theme-file">
 		Your browser does not support the audio element.
@@ -355,21 +367,12 @@
 		</div>
 	</div>
 
-	<header id="fh5co-big-photo1" class="fh5co-cover" role="doc-footnote" style="background-image:url(images/background/9-mobile.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-<!--					<div class="display-t">-->
-<!--						<div class="display-tc animate-box" data-animate-effect="fadeIn">-->
-<!--							<p style="font-size: xxx-large">Some qunio qjwoiejqin oiqjweoijq iowjeoiqwjeiqjwoeijqowjieiqwe</p>-->
-<!--							<h1>Đăng Cao &amp; Hoàng Mai</h1>-->
-<!--							<h2>We Are Getting Married</h2>-->
-<!--							<div class="simply-countdown simply-countdown-one"></div>-->
-<!--							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>-->
-<!--						</div>-->
-<!--					</div>-->
-				</div>
+	<header id="fh5co-big-photo1" class="fh5co-cover parallax-bg" role="doc-footnote" style="background-image:url(images/background/9-mobile.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay">
+
+			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<h2>"In your eyes, I find my home."</h2>
+				<!--					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>-->
 			</div>
 		</div>
 	</header>
@@ -393,61 +396,6 @@
 
 
 
-<!--	<div id="fh5co-gallery-2" >-->
-<!--		<div class="container">-->
-<!--			<div class="row">-->
-<!--				<div class="col-md-4 col-xs-6">-->
-<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
-<!--						<a class="gallery-img image-popup image-popup" href="images/gallery/29.JPG"><img src="images/gallery/29.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
-<!--					</div>-->
-<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
-<!--						<a class="gallery-img image-popup" href="images/gallery/2.jpg"><img src="images/gallery/2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-md-4 col-xs-6">-->
-<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
-<!--						<a class="gallery-img image-popup" href="images/gallery/3.jpg"><img src="images/gallery/3.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
-<!--					</div>-->
-<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
-<!--						<a class="gallery-img image-popup" href="images/gallery/10.jpg"><img src="images/gallery/10.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
-<!--					</div>-->
-<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
-<!--						<a class="gallery-img image-popup" href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-md-4 col-xs-6">-->
-<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
-<!--						<a class="gallery-img image-popup" href="images/gallery/12.jpg"><img src="images/gallery/12.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
-<!--					</div>-->
-<!--					<div class="gallery animate-box" style="margin-bottom: 20px">-->
-<!--						<a class="gallery-img image-popup" href="images/gallery/19.jpg"><img src="images/gallery/19.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
-
-
-<!--	<header id="fh5co-big-photo-2" class="fh5co-cover" role="banner" style="background-image:url(images/background/10.jpg); " data-stellar-background-ratio="0.5">-->
-<!--		<div class="overlay"></div>-->
-<!--		<div class="container">-->
-<!--			<div class="row">-->
-<!--				<div class="col-md-12 text-center">-->
-<!--&lt;!&ndash;					<div class="display-t">&ndash;&gt;-->
-<!--&lt;!&ndash;						<div class="display-tc animate-box" data-animate-effect="fadeIn">&ndash;&gt;-->
-<!--&lt;!&ndash;							<p style="font-size: xxx-large">Some qunio qjwoiejqin oiqjweoijq iowjeoiqwjeiqjwoeijqowjieiqwe</p>&ndash;&gt;-->
-<!--							&lt;!&ndash;							<h1>Đăng Cao &amp; Hoàng Mai</h1>&ndash;&gt;-->
-<!--							&lt;!&ndash;							<h2>We Are Getting Married</h2>&ndash;&gt;-->
-<!--							&lt;!&ndash;							<div class="simply-countdown simply-countdown-one"></div>&ndash;&gt;-->
-<!--							&lt;!&ndash;							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>&ndash;&gt;-->
-<!--&lt;!&ndash;						</div>&ndash;&gt;-->
-<!--&lt;!&ndash;					</div>&ndash;&gt;-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</header>-->
-
-
 	<div id="fh5co-heart-2" >
 		<div class="container">
 			<div class="row">
@@ -460,8 +408,13 @@
 		</div>
 	</div>
 
-	<header id="fh5co-big-photo2" class="fh5co-cover" role="doc-footnote" style="background-image:url(images/background/11.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
+	<header id="fh5co-big-photo2" class="fh5co-cover parallax-bg" role="doc-footnote" style="background-image:url(images/background/11.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay">
+			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<h2>"And all I wanna do is grow old with you."</h2>
+				<!--					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>-->
+			</div>
+		</div>
 	</div>
 	</header>
 	<div class="parallax2 parallax">
@@ -473,6 +426,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+
+
 <!--					<span> 1</span>-->
 <!--					<h2>11 </h2>-->
 					<p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
@@ -512,8 +467,14 @@
 			</div>
 		</div>
 	</div>
-	<header id="fh5co-big-photo3" class="fh5co-cover" role="doc-footnote" style="background-image:url(images/background/15.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
+	<header id="fh5co-big-photo3" class="fh5co-cover parallax-bg" role="doc-footnote" style="background-image:url(images/background/15.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay">
+			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<h2>"Through the good times and the bad, yeah, <br> I'll be standing there by you."</h2>
+				<!--					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>-->
+			</div>
+		</div>
+
 
 		</div>
 	</header>
@@ -840,9 +801,35 @@
 	<script src="js/main.js"></script>
 
 	<script>
-		document.addEventListener('click', musicPlay);
+		function waitForElm(selector) {
+			return new Promise(resolve => {
+				if (document.querySelector(selector)) {
+					return resolve(document.querySelector(selector));
+				}
+
+				const observer = new MutationObserver(mutations => {
+					if (document.querySelector(selector)) {
+						observer.disconnect();
+						resolve(document.querySelector(selector));
+					}
+				});
+
+				observer.observe(document.body, {
+					childList: true,
+					subtree: true
+				});
+			});
+		}
+		waitForElm('#theme').then((elm) => {
+			console.log('Element is ready');
+			document.addEventListener('click', musicPlay);
+			// console.log(elm.textContent);
+		});
 		function musicPlay() {
+			console.log(1);
 			document.getElementById('theme').play();
+
+			document.getElementById('theme').muted=false;
 			document.getElementById('theme').style.display="block";
 			document.removeEventListener('click', musicPlay);
 		}
