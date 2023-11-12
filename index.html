@@ -155,8 +155,39 @@
 			font-family: "VL Millano" !important;
 		}
 
-		@media screen and (max-width: 768px){
+		.owl-item .item{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-content: center;
+		}
 
+		.bi-facebook{
+			color: #337ab7 !important;
+		}
+
+		@media screen and (max-width: 768px){
+			#dchm{
+				font-size: 35px !important;
+			}
+
+			.simply-section , .simply-section div{
+				height: 80px !important;
+				width: 80px !important;
+
+			}
+			.simply-amount{
+				font-size: 23px !important;
+				line-height: 1.4 !important;
+			}
+
+			#presence{
+				font-size: 35px;
+			}
+			#date{
+				font-size: 30px;
+			}
 			.fh5co-cover{
 				display: block;
 			}
@@ -223,7 +254,7 @@
 				<div class="col-md-12 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Đăng Cao &amp; Hoàng Mai</h1>
+							<h1 id = "dchm">Đăng Cao &amp; Hoàng Mai</h1>
 							<h2>We Are Getting Married</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
 							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
@@ -637,7 +668,7 @@
 									<i class="icon-users"></i>
 								</span>
 
-								<span class="counter js-counter" data-from="0" data-to="500" data-speed="5000" data-refresh-interval="50">1</span>
+								<span id="counter" class="counter js-counter" data-from="0" data-to="500" data-speed="3000" data-refresh-interval="50">1</span>
 								<span class="counter-label">Days together</span>
 
 							</div>
@@ -664,12 +695,12 @@
 					<div class="col-md-12 animate-box">
 						<div class="wrap-testimony">
 							<div class="owl-carousel-fullwidth">
-								<div class="item" style="height: 10em">
+								<div class="item" style="height: 12em">
 									<div class="row animate-box">
 										<div  class="col-md-8 col-md-offset-2 text-center fh5co-heading thankyou"  style="margin-bottom: 0; '">
-											<h2 style="font-size: 35px">Your presence is an honor for us!</h2>
+											<h2 id="presence">Your presence is an honor for us!</h2>
 
-											<h2 style="font-size: 30px; color: #828282;">28 . 11 . 2023</h2>
+											<h2 id="date" style="color: #828282;">28 . 11 . 2023</h2>
 										</div>
 									</div>
 								</div>
@@ -680,7 +711,7 @@
 <!--										</div>-->
 <!--									</div>-->
 <!--								</div>-->
-								<div class="item" style="height: 10em; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-content: center; }">
+								<div class="item" style="height: 12em;">
 									<div class="row animate-box">
 										<div class="col-md-8 col-md-offset-2 text-center fh5co-heading thankyou" style="margin-bottom: 0">
 											<h2 style="">Thank you!</h2>
@@ -816,23 +847,32 @@
 			document.getElementById('theme').style.display="block";
 			document.removeEventListener('click', musicPlay);
 		}
-		var d = new Date("November 28, 2023 11:10:00");
+		var d = new Date("November 28, 2023 11:00:00");
+		var date1 = new Date();
+		var date2 = new Date("03/6/2022");
 
+		// To calculate the no. of days between two dates
+		var Difference_In_Days = Math.floor((date1.getTime()-date2.getTime()) / (1000 * 3600 * 24));
+		document.getElementById("counter").setAttribute("data-to", Difference_In_Days);
+		console.log(Difference_In_Days);
 
 		// default example
 		simplyCountdown('.simply-countdown-one', {
 			year: d.getFullYear(),
 			month: d.getMonth() + 1,
-			day: d.getDate()
+			day: d.getDate(),
+			hour: 10,
+			minute: 0
 		});
 
 		//jQuery example
-		$('#simply-countdown-losange').simplyCountdown({
-			year: d.getFullYear(),
-			month: d.getMonth() + 1,
-			day: d.getDate(),
-			enableUtc: false
-		});
+		// $('#simply-countdown-losange').simplyCountdown({
+		// 	year: d.getFullYear(),
+		// 	month: d.getMonth() + 1,
+		// 	day: d.getDate(),
+		// 	hour: d.getHours(),
+		// 	enableUtc: false
+		// });
 	</script>
 
 	</body>
